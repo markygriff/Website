@@ -1,0 +1,315 @@
+/*
+          _____                    _____                    _____                    _____
+         /\    \                  /\    \                  /\    \                  /\    \
+        /::\____\                /::\    \                /::\    \                /::\____\
+       /::::|   |               /::::\    \              /::::\    \              /:::/    /
+      /:::::|   |              /::::::\    \            /::::::\    \            /:::/    /
+     /::::::|   |             /:::/\:::\    \          /:::/\:::\    \          /:::/    /
+    /:::/|::|   |            /:::/__\:::\    \        /:::/__\:::\    \        /:::/____/
+   /:::/ |::|   |           /::::\   \:::\    \      /::::\   \:::\    \      /::::\    \
+  /:::/  |::|___|______    /::::::\   \:::\    \    /::::::\   \:::\    \    /::::::\____\________
+ /:::/   |::::::::\    \  /:::/\:::\   \:::\    \  /:::/\:::\   \:::\____\  /:::/\:::::::::::\    \
+/:::/    |:::::::::\____\/:::/  \:::\   \:::\____\/:::/  \:::\   \:::|    |/:::/  |:::::::::::\____\
+\::/    / ~~~~~/:::/    /\::/    \:::\  /:::/    /\::/   |::::\  /:::|____|\::/   |::|~~~|~~~~~
+ \/____/      /:::/    /  \/____/ \:::\/:::/    /  \/____|:::::\/:::/    /  \/____|::|   |
+             /:::/    /            \::::::/    /         |:::::::::/    /         |::|   |
+            /:::/    /              \::::/    /          |::|\::::/    /          |::|   |
+           /:::/    /               /:::/    /           |::| \::/____/           |::|   |
+          /:::/    /               /:::/    /            |::|  ~|                 |::|   |
+         /:::/    /               /:::/    /             |::|   |                 |::|   |
+        /:::/    /               /:::/    /              \::|   |                 \::|   |
+        \::/    /                \::/    /                \:|   |                  \:|   |
+         \/____/                  \/____/                  \|___|                   \|___|
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+head {
+    display: none;
+}/*head*/
+
+html {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}/*html*/
+
+a {
+    color: #259073;
+    text-decoration: none;
+}/*a*/
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}/*p*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #313131;
+    text-rendering: optimizeLegibility;
+} /*h1, h2, h3, h4, h5, h6*/
+
+
+/*
+ * Global resets
+ */
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 38em) {
+  html {
+      font-size: 20px;
+  }
+}
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right:  1rem;
+    bottom: 1rem;
+    left:   1rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 18rem;
+      text-align: left;
+  }
+}
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 38rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen (min-width: 64em) {
+  .content {
+    margin-left: 22rem;
+    margin-right: 4rem;
+  }
+}
+
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+@media (min-width: 48em) {
+  .layout-reverse .sidebar {
+    left: auto;
+    right: 0;
+  }
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
+  }
+}
+
+/*
+* Classes
+*/
+.body {
+    color: #515151;
+    background-color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}/*body*/
+
+.sidebar {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 2rem 1rem;
+    color: rgba(255,255,255,.5);
+    background-color: #202020;
+}
+
+.container {
+    max-width: 38rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /*margin-left: auto;
+    margin-right: auto;*/
+}/*container*/
+
+.sidebar-about h1 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 2.70rem;
+}/*.sidebar-about h1*/
+
+.sidebar-title {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    height: 81px;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    width: 280px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 140px 40.5px;
+    transform-origin: 140px 40.5px;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal bold normal 65px / 81.25px "PT Sans", Helvetica, Arial, sans-serif;
+    margin: 0px 0px 10px;
+    outline: rgb(255, 255, 255) none 0px;
+}/*.sidebar-title*/
+
+.sidebar-nav {
+    margin-bottom: 3rem;
+}/*.sidebar-nav*/
+
+.sidebar-nav-item {
+    display: block;
+    line-height: 1.75;
+}/*.sidebar-nav-item*/
+
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+
+.sidebar-nav-item.active {
+    font-weight: bold;
+}/*.sidebar-nav-item.active*/
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}/*lead*/
+
+.message {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: #616161;
+    background-color: #e6e6e6;
+}/*message*/
+
+.content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}/*.content*/
+
+.page, .post {
+    margin-bottom: 4em;
+}/*page*/
+
+.page-foot {
+  font-size: 75%;
+  color: #cccccc;
+}/*page-foot*/
+
+.page h1:after {
+    content: ' ';
+    display: block;
+    border: 2px solid #e6e6e6;
+}
+
+.page .page-foot:before {
+  content: ' ';
+  display: block;
+  border: 2px solid #e6e6e6;
+}
+
+.page-title, .post-title {
+    margin-top: 0;
+    color: #303030;
+}
+
+/*Posts*/
+.page, .post {
+  margin-bottom: 4em;
+}
+
+.page-title, .post-title, .post-title a {
+  color: #303030;
+}
+
+.page-title, .post-title {
+  margin-top: 0;
+}
+
+.post-date {
+    display: block;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: #9a9a9a;
+}
+
+/*Highlighters*/
+.highlighter-lake {
+    padding: .25em .5em;
+    font-size: 85%;
+    color: #1967cc;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.highlighter-swamp {
+    padding: .25em .5em;
+    font-size: 85%;
+    color: #114588;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.highlighter-moss {
+    padding: .25em .5em;
+    font-size: 85%;
+    color: #259073;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.highlighter-forest {
+    padding: .25em .5em;
+    font-size: 85%;
+    color: #7FDA89;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.highlighter-lime {
+    padding: .25em .5em;
+    font-size: 85%;
+    color: #DAF7A6;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
